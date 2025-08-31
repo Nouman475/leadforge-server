@@ -32,7 +32,7 @@ app.use(helmet());
 // app.use(morgan('combined'));
 app.use(limiter);
 app.use(cors({
-  origin: 'https://leadforge-n.netlify.app/',
+  origin: 'https://leadforge-n.netlify.app',
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));

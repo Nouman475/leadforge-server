@@ -26,8 +26,13 @@ const limiter = rateLimit({
 app.use(helmet());
 app.use(limiter);
 app.use(cors({
+<<<<<<< HEAD
   origin: process.env.CORS_ORIGIN || "http://localhost:3000",
   credentials: true,
+=======
+  origin: 'https://leadforge-n.netlify.app',
+  credentials: true
+>>>>>>> 194959ca4bfad8341e9598331624831e0a26b4f8
 }));
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
